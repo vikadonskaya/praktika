@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Поля ввода полной ширины */
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #D5E6F3;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Установите стиль для всех кнопок */
+button {
+	box-shadow: 0px 3px 7px #2b2b2b;
+  background-color: #89C3FA;
+  color: #3D3C3C;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  opacity: 0.9;
+	margin-right: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #89C3FA;
+}
+
+/* Поплавок отмена и кнопки регистрации и добавить равную ширину */
+.cancelbtn,
+.signupbtn {
+  width: 20%;
+}
+
+/* Добавить отступы к элементам контейнера */
+.container {
+  padding: 16px;
+}
+
+/* Очистить поплавки */
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/* Измените стили для кнопки отмены и кнопки регистрации на дополнительных маленьких экранах */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
